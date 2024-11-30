@@ -8,6 +8,6 @@ services:
     volumes:
       - ./data:/pb/pb_data 
     environment:
-      PB_VERSION: 0.23.3 
-      SUPERUSER_EMAIL: "admin@example.com"
-      SUPERUSER_PASSWORD: "password"
+      PB_VERSION: "${PB_VERSION}"
+      SUPERUSER_EMAIL: "${POCKETBASE_ADMIN_EMAIL}"
+      SUPERUSER_PASSWORD: "${POCKETBASE_ADMIN_PASSWORD}"
