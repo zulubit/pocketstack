@@ -50,6 +50,8 @@ docker compose up
 
 If the step above was successfull you should see an output directing you to the admin dashbord. **If you set a different local port in .env file you will need to use that port instead of 8080 to access the dashboard.**
 
+Docker message will also disply a url where you can create your first superuser. It's quite long so *Make sure you copy the entire ulr*. If necessary *change the port* in the url.
+
 in another terminal 
 
 ```bash

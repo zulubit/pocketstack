@@ -9,5 +9,3 @@ services:
       - ./data:/pb/pb_data 
     environment:
       PB_VERSION: "${PB_VERSION}"
-      SUPERUSER_EMAIL: "${POCKETBASE_ADMIN_EMAIL}"
-      SUPERUSER_PASSWORD: "${POCKETBASE_ADMIN_PASSWORD}"
