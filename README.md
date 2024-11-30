@@ -1,5 +1,34 @@
 # Getting Started
 
+## Using pocketstack as a starting point
+
+Clone this repository, rename the folder and remove teh .git folder
+
+```bash
+git clone https://github.com/zanfridau/pocketstack.git
+```
+
+```bash
+mv pocketstack [desired name]
+```
+
+```bash
+cd [desired name]
+rm -rf .git
+```
+
+initialize your own repository
+
+```bash
+git init
+```
+
+## Local development quickstart
+
+If you followed the steps above you should already be in `[desired name]` folder.
+
+From this point you should generally follow the steps below:
+
 create react app 
 
 ```bash
