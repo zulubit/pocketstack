@@ -42,11 +42,13 @@ cp .env.example .env
 cp .env ./frontend/.env
 ```
 
-start pocketbase
+start pocketbase 
 
 ```bash
 docker compose up
 ```
+
+If the step above was successfull you should see an output directing you to the admin dashbord. **If you set a different local port in .env file you will need to use that port instead of 8080 to access the dashboard.**
 
 in another terminal 
 
@@ -64,7 +66,7 @@ npm run start
 2. Run:
 
 ```bash
-docker compose up --rebuild
+docker compose up --build
 ```
 
 ### Pocketbase API preview adjustment
@@ -81,8 +83,8 @@ you should probably use:
 const isDev = process.env.ENVIRONMENT === "dev";
 const pb = new PocketBase(
     isDev
-        ? `${process.env.REACT_APP_POCKETBASE_URL}:${process.env.REACT_APP_POCKETBASE_PORT}`
-        : process.env.REACT_APP_POCKETBASE_URL
+        ? `${process.env.POCKETBASE_URL}:${process.env.PB_LOCAL_PORT}`
+        : process.env.POCKETBASE_URL
 );
 ```
 

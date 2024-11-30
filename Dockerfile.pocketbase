@@ -18,3 +18,4 @@ EXPOSE 8080
 
 # Start PocketBase with initialization
 CMD ["/bin/sh", "/pb/init.sh"]
+
