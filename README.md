@@ -82,11 +82,11 @@ const pb = new PocketBase('http://0.0.0.0:8080');
 you should probably use:
 
 ```js
-const isDev = process.env.ENVIRONMENT === "dev";
+const isDev = process.env.REACT_APP_ENVIRONMENT === "dev";
 const pb = new PocketBase(
     isDev
-        ? `${process.env.POCKETBASE_URL}:${process.env.PB_LOCAL_PORT}`
-        : process.env.POCKETBASE_URL
+        ? `${process.env.REACT_APP_POCKETBASE_URL}:${process.env.REACT_APP_PB_LOCAL_PORT}`
+        : process.env.REACT_APP_POCKETBASE_URL
 );
 ```
 
